@@ -8,6 +8,7 @@ import {ModalComponent} from "@/components/ModalComponent";
 import {Button} from "@/components/ui/button";
 
 import "./index.css"
+import Image from "next/image";
 
 const x = 25
 const y = 25
@@ -67,16 +68,20 @@ export default function Home() {
 
                     <div className={`flex-none relative`}>
                         {map === MapEnum.Marcinkowice &&
-                            <img
+                            <Image
+                                width={1000}
+                                height={1000}
+                                unoptimized={true}
                                 ref={imgMarcinkowiceRef}
-                                className="w-[1000px]"
-                                src={"marcinkowice.png"} alt="Mapa Marcinkowice"
+                                src={"/Marcinkowice.png"} alt="Mapa Marcinkowice"
                             />}
                         {map === MapEnum.Stanowice &&
-                            <img
+                            <Image
+                                width={1000}
+                                height={1000}
+                                unoptimized={true}
                                 ref={imgStankowiceRef}
-                                className={"w-[1000px]"}
-                                src={"stanowice.png"} alt="Mapa Stanowice"
+                                src={"/Stanowice.png"} alt="Mapa Stanowice"
                             />
                         }
                         {squares.map(square => (
