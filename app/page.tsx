@@ -42,7 +42,7 @@ export default function Home() {
             <div className="example flex flex-col items-center mt-2 overflow-scroll space-y-5">
                 <div className="flex justify-center mb-4 space-x-2">
                     <Button onClick={() => setMap(MapEnum.Marcinkowice)}>Marcinkowice</Button>
-                    <Button onClick={() => setMap(MapEnum.Stanowice)}>Stanowice</Button>
+                    <Button onClick={() => setMap(MapEnum.Stanowice)}>Nowe Stanowice</Button>
                 </div>
 
                 <div className="flex justify-center mb-4 space-x-2">
