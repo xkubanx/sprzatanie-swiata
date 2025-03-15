@@ -18,7 +18,7 @@ export const createSquares = (x: number, y: number, width: number, height: numbe
         left: ((width / y) * j).toString() + "px",
         width: (width / x).toString() + "px",
         height: (height / y).toString() + "px",
-        border: "0.01em solid black"
+        border: "0.01em solid yellow"
       })
       counter++
     }
