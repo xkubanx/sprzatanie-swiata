@@ -11,7 +11,7 @@ export interface SquareProps {
 
 export enum MapEnum {
     Marcinkowice = 'Marcinkowice',
-    Stanowice = 'Stanowice'
+    Stanowice = 'Nowe Stanowice'
 }
 
 export interface ModalProps {
